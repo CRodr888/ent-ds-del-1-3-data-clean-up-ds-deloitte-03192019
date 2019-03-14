@@ -22,20 +22,6 @@ credit_card_balance = "1400"
 assets = chase_bank_balace + capital_one_bank_balance - credit_card_balance
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    <ipython-input-38-793a63b097b4> in <module>()
-          2 capital_one_bank_balance = "27000"
-          3 credit_card_balance = "1400"
-    ----> 4 assets = chase_bank_balace + capital_one_bank_balance - credit_card_balance
-    
-
-    TypeError: unsupported operand type(s) for -: 'str' and 'str'
-
-
 ### Fixing Capitalization
 When you are comparing text in a programming language, the code is often case sensitive (so "Ben", "ben" and "BEN" would be considered to be three different names. Try running the code below, and then just go in, change the value of name_1 to be all lower case and re-run the code.
 
@@ -48,9 +34,6 @@ if name_1 == name_2:
 else:
     print("Oops - problems with capitalization!")
 ```
-
-    Oops - problems with capitalization!
-
 
 So, consistent capitalization helps to make data both easier to read and easier to process.
 
@@ -70,11 +53,6 @@ print(name.upper())
 print(name.capitalize())
 ```
 
-    sally jones
-    SALLY JONES
-    Sally jones
-
-
 One thing to look out for though. Some methods mutate (change) a variable. Others just return a new value, leaving the original variable as it is. Note below that the original name hasn't changed:
 
 
@@ -86,12 +64,6 @@ print(name.capitalize())
 print(name)
 ```
 
-    sally jones
-    SALLY JONES
-    Sally jones
-    SAlLY JonES
-
-
 So, if you want to change a variable, you have to write your code slightly differently:
 
 
@@ -100,9 +72,6 @@ name = "SAlLY JonES"
 name = name.capitalize()
 print(name)
 ```
-
-    Sally jones
-
 
 Remember that if your code *looks* right but the values of your variables aren't changing!
 
@@ -120,9 +89,6 @@ else:
 print(lives_in_texas)
 ```
 
-    True
-
-
 Try pulling together the last two ideas. Here is some starter code. Can you change the code so it doesn't matter what the capitalization of the state name is?
 
 *Note that the lines starting with a # are comments in Python, so they're notes to you, but aren't processed by the Python interpreter.*
@@ -139,9 +105,6 @@ else:
 
 print(lives_in_texas)
 ```
-
-    False
-
 
 ### Creating Booleans from Numbers
 
@@ -162,22 +125,6 @@ else:
 print(suspicious_assets)
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    <ipython-input-42-ea0acb22df8d> in <module>()
-          2 # Do something to the bank_balance variable here
-          3 # bank_balance = . . .
-    ----> 4 if bank_balance > 5000:
-          5     suspicious_assets = True
-          6 else:
-
-
-    TypeError: '>' not supported between instances of 'str' and 'int'
-
-
 ### Extracting Numbers from Strings
 
 We've seen how to take a simple representation of a number which is stored as a string and to turn that into a number. But what happens if there are additional characters. See what happens when you run the code below (hint, it won't work!!!)
@@ -192,25 +139,6 @@ else:
     livable_wage = False
 print(livable_wage)
 ```
-
-    $36,000
-
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    <ipython-input-43-7b73487f6f7b> in <module>()
-          1 salary="$36,000"
-          2 print(salary)
-    ----> 3 if salary > 46000:
-          4     livable_wage = True
-          5 else:
-
-
-    TypeError: '>' not supported between instances of 'str' and 'int'
-
 
 There are a lot of ways of solving this problem. Here is one solution. 
 
