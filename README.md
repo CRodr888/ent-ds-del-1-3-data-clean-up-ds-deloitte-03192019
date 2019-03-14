@@ -20,6 +20,7 @@ chase_bank_balace = "145000"
 capital_one_bank_balance = "27000"
 credit_card_balance = "1400"
 assets = chase_bank_balace + capital_one_bank_balance - credit_card_balance
+assets
 ```
 
 ### Fixing Capitalization
@@ -73,7 +74,7 @@ name = name.capitalize()
 print(name)
 ```
 
-Remember that if your code *looks* right but the values of your variables aren't changing!
+This is something to bear in mind if your code *looks* right but the values of your variables aren't changing!
 
 ### Creating Booleans from Strings
 Often as a pre-processing stage, you want to take a string and based on it's value, set a boolean for that record. Lets say we want to easily find people who are living in Texas vs elsewhere and we want to take the `State` field from their address and use it to create a boolean called `lives_in_texas`. The core code might look something like this:
